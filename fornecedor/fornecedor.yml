@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/fornecedor
+    username: postgres
+    password: postgres
+  jpa:
+    database: POSTGRESQL
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        ejb.naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        jdbc.lob.non_contextual_creation: true
