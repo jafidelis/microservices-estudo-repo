@@ -11,5 +11,5 @@ spring:
         show_sql: true
         format_sql: true
         ejb.naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
-        jdbc.lob.non_contextual_creation: true
+        #jdbc.lob.non_contextual_creation: true
         ddl-auto: create
