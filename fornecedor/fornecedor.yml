@@ -6,10 +6,11 @@ spring:
     password: postgres
   jpa:
     database: POSTGRESQL
+    generate-ddl: true
     properties:
       hibernate:
         show_sql: true
         format_sql: true
         ejb.naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
-        #jdbc.lob.non_contextual_creation: true
         ddl-auto: create
+        jdbc.lob.non_contextual_creation: true        
